@@ -59,7 +59,7 @@
                     .wrap .profile .left {
                         width: 65%;
                         height: 295px;
-                        background-image: url(/image/me.jpg);
+                        background-image: url(image/me.jpg);
                         background-size: 80%;
                         background-position: center;
                         float: left;
@@ -599,7 +599,7 @@
                             width: 100%;
                             height: fit-content;
                             padding: 3%;
-                            background-image: url(/image/me.jpg);
+                            background-image: url(image/me.jpg);
                             background-size: cover;
                             background-position: 45% 0%;
                             display: inline-block;
