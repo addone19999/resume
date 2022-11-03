@@ -1,0 +1,359 @@
+/* --去除原先設定 重新設定-- */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* --灰色的底-- */
+
+body {
+    background: #ddd;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* 置中 */
+    position: absolute;
+    top: 1000px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* --白色的框架-- */
+
+.wrap {
+    background: #fff;
+    width: 1000px;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 60px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    font-size: 13px;
+}
+
+.wrap h2 {
+    font-size: 18px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    width: fit-content;
+    background-color: rgba(241, 245, 245, 0.6);
+}
+
+
+/* --基本資料-- */
+
+.wrap .profile {
+    height: 325px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 2%;
+    background: linear-gradient(to left, #f5f7f7, #fdfdfd);
+}
+
+.wrap .profile .left {
+    width: 55%;
+    float: left;
+    margin-right: 3%;
+    overflow: hidden;
+}
+
+.wrap .profile .left img {
+    width: 90%;
+}
+
+.wrap .profile .right h1.name {
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    margin-bottom: 110px;
+    padding-top: 32px;
+}
+
+.wrap .profile .right .info {
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 1.5px;
+}
+
+
+/* ---連結圖案--- */
+
+.wrap .profile .right .link a {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    display: inline-block;
+    margin-right: 5px;
+    width: 21px;
+    height: 21px;
+}
+
+.wrap .profile .right .link a img {
+    width: 21px;
+    height: 21px;
+    opacity: 0.8;
+}
+
+.wrap .profile .right .link a:hover {
+    transition: .4s;
+    opacity: 0.4;
+}
+
+
+/* ---電子信箱--- */
+
+.wrap .profile .right .mail::before {
+    content: "E";
+    font-weight: bold;
+}
+
+.wrap .profile .right .mail a {
+    color: #000;
+    text-decoration: none;
+}
+
+.wrap .profile .right .mail a:hover {
+    transition: .4s;
+    text-decoration: none;
+    color: #ccc;
+}
+
+
+/* ---手機--- */
+
+.wrap .profile .right .phone::before {
+    content: "P";
+    font-weight: bold;
+}
+
+
+/* ---更多--- */
+
+.wrap .profile .right .more {
+    float: right;
+}
+
+.wrap .profile .right .more a {
+    color: #ccc;
+    font-weight: 100;
+}
+
+.wrap .profile .right .more a:hover {
+    color: grey;
+    transition: .4s;
+    text-decoration: none;
+}
+
+
+/* --技能-- */
+
+.wrap .skill {
+    margin-left: 2%;
+}
+
+.wrap .skill ul {
+    padding-bottom: 30px;
+}
+
+.wrap .skill ul li {
+    list-style-type: none;
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+}
+
+.wrap .skill ul li:nth-child(3n) {
+    margin-right: 0%
+}
+
+.wrap .skill ul li span::before {
+    content: " / ";
+}
+
+.wrap .skill ul li span {
+    /* margin-left: 9px; */
+    font-weight: lighter;
+    color: rgb(93, 93, 93);
+}
+
+
+/* --經歷--*/
+
+.wrap .experience {
+    margin-left: 2%;
+    height: 300px;
+}
+
+.wrap .experience h2 {}
+
+.wrap .experience .leftbox {
+    width: 45%;
+    height: 210px;
+    float: left;
+    margin-left: 1%;
+    margin-right: 5%;
+    border-left: 1px solid rgb(240, 246, 246);
+    overflow: inherit;
+}
+
+.wrap .experience .rightbox {
+    width: 47%;
+    float: left;
+    border-left: 1px solid rgb(240, 246, 246);
+    overflow: inherit;
+}
+
+.wrap .experience ul {
+    margin-left: 36px;
+}
+
+.wrap .experience ul li::before {
+    content: "●";
+    height: 20px;
+    display: block;
+    border-radius: 50%;
+    color: rgb(210, 210, 210);
+    position: absolute;
+    left: -42.5px;
+}
+
+.wrap .experience ul li {
+    list-style-type: none;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.wrap .experience ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.wrap .experience ul li a:hover {
+    transition: .4s;
+    color: #ccc;
+}
+
+.wrap .experience ul li span::before {
+    content: "○";
+    margin-left: 10px;
+    margin-right: 4px;
+}
+
+.wrap .experience ul li span {
+    display: block;
+    margin-top: 6px;
+    font-size: 9px;
+    font-weight: lighter;
+    color: rgb(111, 111, 111);
+}
+
+
+/* --作品-- */
+
+.wrap .work h2 {
+    margin-left: 2%;
+    margin-top: 50px;
+}
+
+.wrap .work ul {
+    height: fit-content;
+    width: fit-content;
+    padding-left: 20px;
+    padding-bottom: 400px;
+    list-style-type: none;
+}
+
+.wrap .work ul li {
+    float: left;
+    width: 31%;
+    height: 190px;
+    margin-right: 2%;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.wrap .work ul li img {
+    object-position: 0px, ;
+    width: 100%;
+    cursor: crosshair;
+}
+
+.wrap .work ul li:hover img {
+    transform: scale(1.3);
+    transition: all 1s;
+}
+
+
+/* ---更多--- */
+
+.wrap .work .more {
+    float: right;
+    margin-right: 3.5%;
+}
+
+.wrap .work .more a {
+    font-weight: 100;
+    color: #ccc;
+}
+
+.wrap .work .more a:hover {
+    color: grey;
+    transition: .4s;
+    text-decoration: none;
+}
+
+.wrap .woodworking h2 {
+    margin-left: 2%;
+    margin-top: 50px;
+}
+
+.wrap .woodworking ul {
+    height: fit-content;
+    width: fit-content;
+    padding-left: 20px;
+    padding-bottom: 200px;
+    list-style-type: none;
+}
+
+.wrap .woodworking ul li {
+    float: left;
+    width: 31%;
+    height: 180px;
+    margin-right: 2%;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.wrap .woodworking ul li img {
+    object-position: 0px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.wrap .woodworking ul li:hover img {
+    transform: scale(1.3);
+    transition: all 1s;
+}
+
+.wrap .bottom {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.wrap .bottom ul {
+    list-style: none;
+}
+
+.wrap .bottom a {
+    font-size: 10px;
+    font-weight: lighter;
+    text-decoration: none;
+    word-spacing: 1px;
+    color: #000;
+}
+
+.wrap .bottom a:hover {
+    transition: .4s;
+    color: #ccc;
+}
