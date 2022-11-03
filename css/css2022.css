@@ -9,7 +9,13 @@
 /* --灰色的底-- */
 
 body {
-    background: rgb(230, 230, 230);
+    background: #ddd;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* 置中 */
+    position: absolute;
+    top: 1000px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -19,7 +25,8 @@ body {
     background: #fff;
     width: 1000px;
     height: auto;
-    margin: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     padding: 60px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     font-size: 13px;
@@ -38,6 +45,7 @@ body {
 
 .wrap .profile {
     height: 325px;
+    margin-top: 20px;
     margin-bottom: 20px;
     padding: 2%;
     background: linear-gradient(to left, #f5f7f7, #fdfdfd);
@@ -94,12 +102,12 @@ body {
 /* ---電子信箱--- */
 
 .wrap .profile .right .mail::before {
-    content: "/E";
+    content: "E";
     font-weight: bold;
 }
 
 .wrap .profile .right .mail a {
-    color: black;
+    color: #000;
     text-decoration: none;
 }
 
@@ -113,7 +121,7 @@ body {
 /* ---手機--- */
 
 .wrap .profile .right .phone::before {
-    content: "/P";
+    content: "P";
     font-weight: bold;
 }
 
@@ -162,7 +170,7 @@ body {
 }
 
 .wrap .skill ul li span {
-    margin-left: 8px;
+    /* margin-left: 9px; */
     font-weight: lighter;
     color: rgb(93, 93, 93);
 }
@@ -215,7 +223,7 @@ body {
 }
 
 .wrap .experience ul li a {
-    color: black;
+    color: #000;
     text-decoration: none;
 }
 
@@ -225,12 +233,14 @@ body {
 }
 
 .wrap .experience ul li span::before {
-    content: " / ";
-    margin-left: 12px;
+    content: "○";
+    margin-left: 10px;
+    margin-right: 4px;
 }
 
 .wrap .experience ul li span {
     display: block;
+    margin-top: 6px;
     font-size: 9px;
     font-weight: lighter;
     color: rgb(111, 111, 111);
@@ -262,8 +272,9 @@ body {
 }
 
 .wrap .work ul li img {
-    object-position: 0px;
+    object-position: 0px, ;
     width: 100%;
+    cursor: crosshair;
 }
 
 .wrap .work ul li:hover img {
@@ -315,6 +326,7 @@ body {
 .wrap .woodworking ul li img {
     object-position: 0px;
     width: 100%;
+    cursor: pointer;
 }
 
 .wrap .woodworking ul li:hover img {
@@ -322,29 +334,26 @@ body {
     transition: all 1s;
 }
 
-.wrap .bottom a {
-    text-decoration: none;
-    font-size: 9px;
-    font-weight: lighter;
-    color: rgb(111, 111, 111);
+.wrap .bottom {
     margin-top: 50px;
-    margin-bottom: 10px;
     display: flex;
     justify-content: center;
+    text-align: center;
+}
+
+.wrap .bottom ul {
+    list-style: none;
+}
+
+.wrap .bottom a {
+    font-size: 10px;
+    font-weight: lighter;
+    text-decoration: none;
+    word-spacing: 1px;
+    color: #000;
 }
 
 .wrap .bottom a:hover {
     transition: .4s;
     color: #ccc;
 }
-
-
-/* .top {
-    position: sticky;
-    bottom: 20px;
-    text-decoration: none;
-    padding: 10px;
-    color: #fff;
-    background-color: #ccc;
-    border-radius: 100px;
-} */
