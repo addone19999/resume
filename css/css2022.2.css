@@ -1,5 +1,9 @@
                     /* --去除原先設定 重新設定-- */
                     
+                    html {
+                        scroll-behavior: smooth;
+                    }
+                    
                     * {
                         padding: 0;
                         margin: 0;
@@ -23,6 +27,7 @@
                         text-align: center;
                         background-color: rgba(150, 150, 150, 0.6);
                         border-radius: 50% 50%;
+                        scroll-behavior: smooth;
                     }
                     
                     .btt a {
@@ -133,8 +138,7 @@
                         content: "P";
                         font-weight: bold;
                     }
-
-
+                    
                     .wrap .profile .right .phone {
                         color: #000;
                         text-decoration: none;
