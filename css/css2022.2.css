@@ -133,6 +133,11 @@
                         content: "P";
                         font-weight: bold;
                     }
+
+.wrap .profile .right .phone {
+                        color: #000;
+                        text-decoration: none;
+                    }
                     /* ---更多--- */
                     
                     .wrap .profile .right .more {
