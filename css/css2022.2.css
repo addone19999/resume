@@ -476,6 +476,7 @@
                         }
                         /* --作品-- */
                         .wrap .work {
+                            padding-top: 160px;
                             height: auto;
                         }
                         .wrap .work .graphic {
