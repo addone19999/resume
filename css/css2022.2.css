@@ -326,7 +326,8 @@
                     
                     .wrap .woodworking ul li img {
                         width: 100%;
-                        object-position: 0px;
+                        height: auto;
+                        object-position: 0%;
                     }
                     
                     .wrap .woodworking ul li:hover img {
@@ -368,7 +369,7 @@
                         font-weight: 200;
                     }
                     
-                    @media screen and (max-width: 1024px) {
+                    @media screen and (max-width: 900px) {
                         * {
                             padding: 0;
                             margin: 0;
@@ -479,6 +480,9 @@
                             padding-top: 160px;
                             height: auto;
                         }
+                        .wrap .work .more {
+                            margin-top: -20px;
+                        }
                         .wrap .work .graphic {
                             width: 100%;
                             height: 725px;
@@ -489,7 +493,7 @@
                         }
                         .wrap .work ul li {
                             width: 45%;
-                            height: 200px;
+                            height: auto;
                             margin-left: 1%;
                             margin-right: 4%;
                             margin-bottom: 30px;
@@ -498,9 +502,6 @@
                         .wrap .work ul li img {
                             width: 100%;
                             height: auto
-                        }
-                        .wrap .work .graphic .more {
-                            margin-top: -20px;
                         }
                         .wrap .work .graphic .more a {
                             font-size: 10px;
@@ -511,11 +512,10 @@
                         }
                         .wrap .work .woodworking {
                             width: 100%;
-                            height: 280px;
-                            overflow: hidden;
+                            height: 400px;
                         }
-                        .wrap .work .woodworking li {
-                            margin-bottom: 70px;
+                        .wrap .work .woodworking li:last-child {
+                            display: none;
                         }
                         .wrap .work .woodworking img {
                             object-fit: cover;
@@ -613,24 +613,19 @@
                             float: right;
                             margin: 0;
                         }
-                        .wrap .profile .right .more a {
-                            color: rgb(255, 255, 255);
-                        }
                         /* --技能-- */
                         .wrap .skill {
+                            display: block;
                             margin-left: 2%;
                         }
                         .wrap .skill ul li {
-                            list-style-type: none;
+                            list-style-type: symbols();
                             width: 100%;
                             float: left;
                             margin-bottom: 5px;
                         }
                         .wrap .skill ul li:nth-child(2n) {
                             margin-right: 0%
-                        }
-                        .wrap .skill ul li span::before {
-                            content: " / ";
                         }
                         .wrap .skill ul li span {
                             margin-left: 1%;
@@ -639,9 +634,10 @@
                         }
                         /* --經歷--*/
                         .wrap .experience {
-                            margin-top: 50px;
+                            height: auto;
+                            padding-top: 50px;
                             margin-left: 2%;
-                            display: inline-block;
+                            display: block;
                         }
                         .wrap .experience ul {
                             padding-left: 40px;
@@ -666,6 +662,9 @@
                             height: auto;
                             float: left;
                             margin-left: 5px;
+                        }
+                        .wrap .experience .leftbox ul li:nth-child(n+4) :nth-child(-n+5) {
+                            display: none;
                         }
                         .wrap .experience .rightbox {
                             width: 100%;
@@ -694,13 +693,20 @@
                         }
                         /* --作品-- */
                         .wrap .work {
+                            display: block;
                             height: auto;
-                            padding-top: 400px;
+                        }
+                        .wrap .work .more {
+                            font-size: 12px;
+                            text-align: center;
+                            margin-right: 5px;
+                            margin-top: 5px;
+                            margin-bottom: 20px;
                         }
                         .wrap .work .graphic {
                             width: 100%;
                             height: fit-content;
-                            margin-top: 120px;
+                            padding-top: 250px;
                         }
                         .wrap .work ul {
                             padding-right: 5px;
@@ -711,13 +717,6 @@
                             padding: 0%;
                             margin: 0px auto;
                             margin-bottom: 10px;
-                        }
-                        .wrap .work .graphic .more {
-                            font-size: 12px;
-                            text-align: center;
-                            margin-right: 5px;
-                            margin-top: 5px;
-                            margin-bottom: 20px;
                         }
                         .wrap .work .graphic .more a {
                             color: rgba(0, 0, 0, 0.7);
@@ -732,6 +731,9 @@
                         }
                         .wrap .work .woodworking li {
                             margin-bottom: 10px;
+                        }
+                        .wrap .work .woodworking li:last-child {
+                            display: block;
                         }
                         .bottominfo {
                             padding: 10px;
