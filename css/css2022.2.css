@@ -49,8 +49,7 @@
                         width: fit-content;
                         background-color: rgb(245, 245, 245);
                         font-size: 18px;
-                        margin-top: 60px;
-                        margin-bottom: 10px;
+                        margin-bottom: 15px;
                     }
                     /* --基本資料-- */
                     
@@ -163,8 +162,10 @@
                     
                     .wrap .skill {
                         margin-left: 2%;
-                        margin-bottom: 100px;
+                        margin-top: 50px;
+                        margin-bottom: 50px;
                     }
+
                     
                     .wrap .skill ul li {
                         width: 30%;
@@ -193,6 +194,8 @@
                         height: auto;
                         margin-left: 2%;
                         display: flow-root;
+                        margin-top: 100px;
+                        margin-bottom: 0px;
                     }
                     
                     .wrap .experience .leftbox {
@@ -227,6 +230,10 @@
                         margin-bottom: 32px;
                         position: relative;
                     }
+                    .wrap .experience .exhibition{
+                        margin-top: -70px;
+                    }
+
                     /* 經驗動畫 */
                     
                     .wrap .experience ul li a {
@@ -474,6 +481,10 @@
                             margin-left: -30px;
                             margin-bottom: 32px;
                             position: relative;
+                        }
+
+                        .wrap .experience .exhibition{
+                            margin-top: 30px;
                         }
                         /* --作品-- */
                         .wrap .work {
