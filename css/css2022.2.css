@@ -163,6 +163,7 @@
                     
                     .wrap .skill {
                         margin-left: 2%;
+                        margin-bottom: 100px;
                     }
                     
                     .wrap .skill ul li {
@@ -190,7 +191,6 @@
                     
                     .wrap .experience {
                         height: auto;
-                        margin-top: 100px;
                         margin-left: 2%;
                         display: flow-root;
                     }
@@ -477,7 +477,7 @@
                         }
                         /* --作品-- */
                         .wrap .work {
-                            padding-top: 160px;
+                            padding-top: 0px;
                             height: auto;
                         }
                         .wrap .work .more {
@@ -493,15 +493,17 @@
                         }
                         .wrap .work ul li {
                             width: 45%;
-                            height: auto;
+                            height: 180px;
                             margin-left: 1%;
-                            margin-right: 4%;
+                            margin-right: 3%;
                             margin-bottom: 30px;
                             overflow: hidden;
                         }
                         .wrap .work ul li img {
                             width: 100%;
-                            height: auto
+                            height: auto;
+                            object-fit: cover ;
+
                         }
                         .wrap .work .graphic .more a {
                             font-size: 10px;
@@ -522,7 +524,7 @@
                         }
                     }
                     
-                    @media screen and (max-width: 650px) {
+                    @media screen and (max-width: 670px) {
                         * {
                             padding: 0;
                             margin: 0;
@@ -639,6 +641,9 @@
                             margin-left: 2%;
                             display: block;
                         }
+                        .wrap .experience .exhibition{
+                            margin-top: 350px;
+                        }
                         .wrap .experience ul {
                             padding-left: 40px;
                             margin-left: 8px;
@@ -695,6 +700,7 @@
                         .wrap .work {
                             display: block;
                             height: auto;
+                            margin-top: 0px;
                         }
                         .wrap .work .more {
                             font-size: 12px;
@@ -706,8 +712,12 @@
                         .wrap .work .graphic {
                             width: 100%;
                             height: fit-content;
-                            padding-top: 250px;
+                            /* padding-top: 100px; */
                         }
+                        .wrap .work .graphic h2{
+                            margin-top: 400px;
+                        }
+
                         .wrap .work ul {
                             padding-right: 5px;
                         }
